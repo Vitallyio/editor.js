@@ -104,7 +104,7 @@ interface PasteData {
  */
 export default class Paste extends Module {
   /** If string`s length is greater than this number we don't check paste patterns */
-  public static readonly PATTERN_PROCESSING_MAX_LENGTH = 450;
+  public static readonly PATTERN_PROCESSING_MAX_LENGTH = 10000;
 
   /** Custom EditorJS mime-type to handle in-editor copy/paste actions */
   public readonly MIME_TYPE = 'application/x-editor-js';
